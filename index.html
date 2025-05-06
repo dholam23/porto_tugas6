@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header>
+    <h1>Portofolio</h1>
+    <nav>
+        <ul>
+            <a href="#Beranda">Home</a> | 
+            <a href="#about">My Profile</a> | 
+            <a href="#Proyek">Proyek</a> | 
+            <a href="#Multimedia">Multimedia</a> | 
+            <a href="#kontak">Contact</a>
+            
+        </ul>
+    </nav>
+    <button id="toggleTheme">Toggle Tema</button>
+</header>
+
+<main>
+    <section id="about">
+        <article>
+            <h2>About Myself</h2>
+            <img src="foto.jpeg" alt="Foto Profil" width="120" height="120" />
+            <p>Hello, let me introduce myself, my name is Muhammad Nurudh Dholam, 
+                a 4th semester student majoring in information systems at Semen Indonesia International University. 
+                I am currently studying my field of study as a frontend developer. 
+                I have experience in working on a project using HTML, CSS and several other modern frameworks in creating website displays.
+            </p>
+
+            <h2>My Hobby</h2>
+            <ul>
+                <li>Futsal</li>
+                <li>Memancing</li>
+                <li>Traveling</li>
+                <li>Coding</li>
+            </ul>
+        </article>
+
+        <h2>Experience</h2>
+        <ul>
+            <li>Frontend website sistem informasi</li>
+            <li>Frontend website UISI</li>
+        </ul>
+        <hr />
+    </section>
+
+    <section id="Proyek">
+        <h2>Proyek Saya</h2>
+        <h3>Desain Aplikasi UISI</h3>
+        <img src="proyek.png" alt="Desain Aplikasi UISI" width="400" height="300" />
+    </section>
+
+    <section id="Multimedia">
+        <h2>Multimedia</h2>
+    
+        <h3>Video Profil</h3>
+        <video width="250" controls>
+            <source src="video profil.mp4" type="video/mp4" />
+            Browser Anda tidak mendukung video.
+        </video>
+    
+        <h3>Audio</h3>
+        <audio controls>
+            <source src="lagu.mpeg" type="audio/mpeg" />
+        </audio>
+    
+        <h3>Media dari API</h3>
+        <button id="loadMedia">Tampilkan Gambar  dari API</button>
+        <div id="mediaContainer"></div>
+    </section>
+    
+
+    <section id="kontak">
+        <h2>Kontak Saya</h2>
+        <p>Silakan isi form berikut atau hubungi saya langsung melalui email:</p>
+        <a href="mailto:muhammad.dholam@student.uisi.ac.id">muhammad.dholam@student.uisi.ac.id</a>
+
+        <form id="contactForm" method="post">
+            <label for="name">Nama:</label><br />
+            <input type="text" id="name" name="nama" required /><br /><br />
+
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email" required /><br /><br />
+
+            <label for="pesan">Pesan:</label><br />
+            <textarea id="pesan" name="pesan" rows="4" required></textarea><br /><br />
+
+            <button type="submit">Kirim</button>
+            <p id="formMsg"></p>
+        </form>
+    </section>
+
+    <section id="Buku Tamu">
+        <h2>Buku Tamu</h2>
+        <p>Silakan tinggalkan nama dan email Anda di bawah ini:</p>
+        <form id="formBukuTamu">
+            <label for="guestName">Nama:</label><br />
+            <input type="text" id="guestName" required /><br /><br />
+
+            <label for="guestEmail">Email:</label><br />
+            <input type="email" id="guestEmail" required /><br /><br />
+
+            <button type="submit">Kirim</button>
+        </form>
+
+        <h3>Daftar Pengunjung:</h3>
+        <ul id="guestList"></ul>
+    </section>
+    <section id="postinganAPI">
+        <h2>Postingan dari API</h2>
+        <button id="fetchPosts">Tampilkan Postingan</button>
+        <ul id="postList"></ul>
+    </section>
+    
+</main>
+
+<footer>
+    <div>
+        <p align="center">Sosial Media</p>
+        <ul align="center">
+            <a href="https://www.instagram.com/dholam.nurudh?igsh=MTNvMDA5OG1lMWUzeg==">Instagram</a> |
+            <a href="mailto:muhammad.dholam@student.uisi.ac.id">Email</a> |
+            <a href="https://www.linkedin.com/in/dholam-nurudh-aa88502a1">LinkedIn</a>
+        </ul>
+    </div>
+    <div>
+        <p align="center">© 2025 Muhammad Nurudh Dholam - Semua Hak Dilindungi</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
